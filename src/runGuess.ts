@@ -44,7 +44,7 @@ export async function run() {
       console.log(err);
     }
   }
-  let potValue = Field(1000);
+  let potValue = Field(25000);
   //transaction to deploy the smart contract and init its values
   const tx = await Mina.transaction(deployerAcc, () => {
     const initialBalance = UInt64.fromNumber(100000000);
